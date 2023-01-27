@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAS DELICIAS DE CORINTO</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <div  id="page1" class="main-container">
+    <div class="container-title">
+      <h1 id="titulo">las Delicias de CORINTO</h1>
+      <div class="date">
+        <div class="dateRight">
+          <div id="dateNumber"></div>
+          <div>
+            <div id="dateMonth"></div>
+            <div id="dateYear"></div>
+          </div>
+        </div>
+        <div>
+          <div id="dateText"></div>
+          <div id="hours"></div>
+        </div>
+
+      </div>
+      <p id="bordo"></p>
+    </div>
+    <div id="container-order">
+      <a href="#page1" class="subtitulo1">Pedido 1</a>
+      <a href="#page2" class="subtitulos">pedido 2</a>
+    </div>
+
+
+
+    <div class="mis-productos">
+      <select id="products">
+        <option data-id="0" value=0>Seleccionar Producto</option>
+        <option data-id="1" value=1200>enpanada</option>
+        <option data-id="2" value=2500>papa rellena $2500</option>
+        <option data-id="3" value=2500>aborrajados $2500</option>
+        <option data-id="4" value=2500>Enbueltos $2500</option>
+        <option data-id="5" value=1200>papa aborrajada $1200</option>
+        <option data-id="6" value=1000>salchichon $1000</option>
+        <option data-id="7" value=2200>combo papa y salchichon $2200</option>
+        <option data-id="8" value=4500>choriso $4500</option>
+        <option data-id="9" value=4500>alas apanadas $4500</option>
+        <option data-id="10" value=4500>murlos apanados $4500</option>
+        <option data-id="11" value=4500>contramurlo $4500</option>
+        <option data-id="12" value=8000>desalluno $8000</option>
+        <option data-id="13" value=12000>almuerso sensillo 12000</option>
+        <option data-id="14" value=8000>pericos con arroz $8000</option>
+        <option data-id="15" value=12000>arroz con pollo $12000 </option>
+        <option data-id="16" value=12000>arroz paisa $12000</option>
+        <option data-id="17" value=1000>cafe pequeño $1000</option>
+        <option data-id="18" value=2000>cafe con leche $2000</option>
+        <option data-id="19" value=3000>coka kola $3000</option>
+        <option data-id="20" value=3000>jugo hit $3000</option>
+        <option data-id="21" value=2000>masato $2000</option>
+        <option data-id="22" value=4000>jugos caseros $4000</option>
+        <option data-id="23" value=1800>milo $1800</option>
+      </select>
+    </div>
+
+    <div>
+       <label class="label">Elegir pricipio 1</label>
+       <label class="label">Elegir carnes 2</label>
+    </div>
+     
+    <div class="taste">
+      <td>
+        <select id="taste1">
+          <option value=""></option>
+          <option value="01">frijoles</option>
+          <option value="02">garvansos</option>
+          <option value="03">lentejas</option>          
+          <option value="04">pastas</option>          
+          <option value="05">avichuelas</option>          
+          <option value="06">alverjas</option>
+        </select>
+      </td>
+      <td>
+        <select id="taste2">
+          <option value=""></option>
+          <option value="01">carne asada</option>
+          <option value="02">carne sudada</option>
+          <option value="03">carne de serdo asada</option>
+          <option value="04">pollo asado</option>
+          <option value="05">pollo sudado</option>
+          <option value="06">pezcado frito</option>
+          <option value="07">pezcado sudado</option>
+        </select>
+      </td>
+    </div>
+    <div>
+      <label class="label2">elegir jugos 3</label>
+    </div>
+    <div>
+      <td>
+        <select id="taste3">
+          <option value=""></option>
+          <option value="01">maracuya</option>
+          <option value="02">fresa</option>
+          <option value="03">mora</option>
+          <option value="04">lulo</option>
+          <option value="05">Limonada</option>
+          <option value="06">guanavana</option>
+          <option value="07">mango</option>
+          <option value="08">guayaba</option>
+          <option value="09">uva</option>
+        </select>
+      </td>
+    </div>
+
+    <div class="buttons">
+      <button id="add-product">Agregar Producto</button>
+      <button id="empty">Eiiminar Productos</button>
+      <button id="buy">Comprar</button>
+    </div>
+
+
+    <div class="container">
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th class="eti">Producto</th>
+            <th class="eti">Precio</th>
+            <th class="eti">Total</th>
+            <th class="eti">comida</th>       
+          </tr>
+        </thead>
+        <thead id="tabla">
+
+        </thead>
+
+
+      </table>
+
+    </div>
+  </div>
+  <!-- 777777777777777777777777777777777777777777777777777777777777777777777777777777777777 -->
+  <div>
+    <div id="page2" class="main-container2">
+      <div class="container-title">
+        <h1 id="titulo">las Delicias de CORINTO</h1>
+        <div class="date2">
+          <div class="dateRight2">
+            <div id="dateNumber2"></div>
+            <div>
+              <div id="dateMonth2"></div>
+              <div id="dateYear2"></div>
+            </div>
+          </div>
+          <div>
+            <div id="dateText2"></div>
+            <div id="hours2"></div>
+          </div>
+
+        </div>
+        <p id="bordo"></p>
+      </div>
+      <div id="container-order">
+        <a href="#page1" class="subtitulos">Pedido 1</a>
+        <a href="#page2" class="subtitulo2">pedido 2</a>
+      </div>
+
+
+
+      <div class="mis-productos">
+        <select id="products2">
+          <option data-id="0" value=0>Seleccionar Producto</option>
+        <option data-id="1" value=1200>enpanada</option>
+        <option data-id="2" value=2500>papa rellena $2500</option>
+        <option data-id="3" value=2500>aborrajados $2500</option>
+        <option data-id="4" value=2500>Enbueltos $2500</option>
+        <option data-id="5" value=1200>papa aborrajada $1200</option>
+        <option data-id="6" value=1000>salchichon $1000</option>
+        <option data-id="7" value=2200>combo papa y salchichon $2200</option>
+        <option data-id="8" value=4500>choriso $4500</option>
+        <option data-id="9" value=4500>alas apanadas $4500</option>
+        <option data-id="10" value=4500>murlos apanados $4500</option>
+        <option data-id="11" value=4500>contramurlo $4500</option>
+        <option data-id="12" value=8000>desalluno $8000</option>
+        <option data-id="13" value=12000>almuerso sensillo 12000</option>
+        <option data-id="14" value=8000>pericos con arroz $8000</option>
+        <option data-id="15" value=12000>arroz con pollo $12000 </option>
+        <option data-id="16" value=12000>arroz paisa $12000</option>
+        <option data-id="17" value=1000>cafe pequeño $1000</option>
+        <option data-id="18" value=2000>cafe con leche $2000</option>
+        <option data-id="19" value=3000>coka kola $3000</option>
+        <option data-id="20" value=3000>jugo hit $3000</option>
+        <option data-id="21" value=2000>masato $2000</option>
+        <option data-id="22" value=4000>jugos caseros $4000</option>
+        <option data-id="23" value=1800>milo $1800</option>
+        </select>
+      </div>
+
+      <div>
+       <label class="label">Elegir principio 1</label>
+       <label class="label">Elegir carne 2</label>
+     </div>
+
+      <div class="taste">
+        <td>
+          <select id="taste12">
+          <option value=""></option>
+          <option value="01">frijoles</option>
+          <option value="02">garvansos</option>
+          <option value="03">lentejas</option>          
+          <option value="04">pastas</option>          
+          <option value="05">avichuelas</option>          
+          <option value="06">alverjas</option>
+          </select>
+        </td>
+        <td>
+          <select id="taste22">
+            <option value=""></option>
+            <option value="01">carne asada</option>
+            <option value="02">carne sudada</option>
+            <option value="03">carne de serdo asada</option>
+            <option value="04">pollo asado</option>
+            <option value="05">pollo sudado</option>
+            <option value="06">pezcado frito</option>
+            <option value="07">pezcado sudado</option>
+          </select>
+        </td>
+      </div>
+      <label class="label2">elegir jugos 3</label>
+      <div>
+        <td>
+          <select id="taste32">
+            <option value=""></option>
+            <option value="01">maracuya</option>
+            <option value="02">fresa</option>
+            <option value="03">mora</option>
+            <option value="04">lulo</option>
+            <option value="05">Limonada</option>
+            <option value="06">guanavana</option>
+            <option value="07">mango</option>
+            <option value="08">guayaba</option>
+            <option value="09">uva</option>
+          </select>
+        </td>
+      </div>
+
+      <div class="buttons">
+        <button id="add-product2">Agregar Producto</button>
+        <button id="empty2">Eiiminar productos</button>
+        <button id="buy2">Comprar</button>
+      </div>
+
+
+
+
+
+      <div class="container">
+        <table class="table">
+
+          <thead>
+            <tr>
+              <th class="eti">Producto</th>
+              <th class="eti">Precio</th>
+              <th class="eti">Total</th>
+              <th class="eti">comida</th>
+            </tr>
+          </thead>
+          <thead id="tabla2">
+
+          </thead>
+
+
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+
+      <!-- <textarea name="mesa" id="mesa1" cols="30" rows="3" placeholder="Adjuntar nota"></textarea> -->    
+
+    </div>
+  </div>
+</body>
+<script src="src/my-knowledge.js"></script>
+<script src="src/index2.js"></script>
+<script src="src/index3.js"></script>
+
+</html>
